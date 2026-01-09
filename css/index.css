@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+/* Général */
+
+*{
+    margin: 0;
+    font-family: var(--Newsreader);
+}
+
+:root{
+    --Newsreader: "Newsreader", serif;
+    --green: #4F966E;
+    --grey: #E8F2ED;
+    --darkgreen: #0D1C12;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    margin: auto;
+    max-width: 1280px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+header a{
+    color: var(--darkgreen);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .formheader{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+header .formheader .barsearch{
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    padding: 15px;
+    background-color: var(--grey);
+    color: var(--grey);
+}
+
+header .formheader .barsearch #loupe{
+    color: var(--green);
+}
+
+header .formheader .barsearch #search{
+    border: none;
+    background-color: (var(--grey));
+}
+
+header .formheader .btnheader #btnheader{
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    background-color: var(--grey);
+    padding: 10px 15px;
+    color: black;
+}
+
+header .formheader .btnheader #btnheader:hover{
+    background-color: var(--darkgreen);
+    color: var(--grey);
+    transition: all 0.3s ease-in-out;
+}
