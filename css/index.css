@@ -110,6 +110,8 @@ main .section1 .background{
     justify-self: center;
     display: flex;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 main .section1 article{
@@ -256,4 +258,22 @@ footer p a{
 footer p a:hover{
     color: var(--darkgreen);
     transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px){
+    header{
+        padding: 0 15px;
+    }
+
+    main .section1 .background{
+        width: fit-content;
+    }
+
+    main .section2{
+        padding: 0 15px;
+    }
+
+    footer div{
+        padding: 0 15px;
+    }
 }
