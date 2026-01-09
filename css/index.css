@@ -18,6 +18,11 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: #0D1C12;
+    transition: all 0.3s ease-in-out;
+}
+
 /* Header */
 
 header{
@@ -47,7 +52,7 @@ header .formheader{
 header .formheader .barsearch{
     border: 1px solid var(--grey);
     border-radius: 20px;
-    padding: 15px;
+    padding: 10px 15px;
     background-color: var(--grey);
     color: var(--grey);
 }
@@ -65,12 +70,43 @@ header .formheader .btnheader #btnheader{
     border: 1px solid var(--grey);
     border-radius: 20px;
     background-color: var(--grey);
-    padding: 10px 15px;
+    padding: 8px 13px;
     color: black;
 }
 
 header .formheader .btnheader #btnheader:hover{
     background-color: var(--darkgreen);
     color: var(--grey);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1280px;
+    height: 152px;  
+}
+
+footer div a{
+    color: var(--green);
+}
+
+footer p{
+    margin: auto;
+    max-width: 1280px;
+    text-align: center;
+    color: var(--green);
+}
+
+footer p a{
+    color: var(--green);
+}
+
+footer p a:hover{
+    color: var(--darkgreen);
     transition: all 0.3s ease-in-out;
 }
