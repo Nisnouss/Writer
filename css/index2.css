@@ -92,6 +92,47 @@ header .formheader .btnheader #btnheader:hover{
     display: none;
 }
 
+/* Main */
+
+main section div{
+    display: inline-block;
+    margin: 30px auto;
+    max-width: 882px;
+    text-align: justify;
+}
+
+main section div h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0D1C12;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+main section div h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #0D1C12;
+}
+
+main section div p{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #696969;
+}
+
+main section{
+    display: flex;
+}
+
+main section div img{
+    width: 779px;
+    height: 216px;
+}
+
 /* Footer */
 
 footer div{
