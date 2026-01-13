@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+/* Général */
+
+*{
+    margin: 0;
+    font-family: var(--Newsreader);
+}
+
+img{
+    border-radius: 12px;
+}
+
+:root{
+    --Newsreader: "Newsreader", serif;
+    --green: #4F966E;
+    --grey: #E8F2ED;
+    --darkgreen: #0D1C12;
+    --lightgreen: #1AE570;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0D1C12;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    margin: auto;
+    max-width: 1280px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid var(--grey);
+}
+
+header a{
+    color: var(--darkgreen);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header .formheader{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+header .formheader .barsearch{
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: var(--grey);
+    color: var(--grey);
+}
+
+header .formheader .barsearch #loupe{
+    color: var(--green);
+}
+
+header .formheader .barsearch #search{
+    border: none;
+    background-color: (var(--grey));
+}
+
+header .formheader .btnheader #btnheader{
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    background-color: var(--grey);
+    padding: 8px 13px;
+    color: black;
+}
+
+header .formheader .btnheader #btnheader:hover{
+    background-color: var(--darkgreen);
+    color: var(--grey);
+    transition: all 0.3s ease-in-out;
+}
+
+#searchicon{
+    display: none;
+}
+
+/* Footer */
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1280px;
+    height: 152px;  
+}
+
+footer div a{
+    color: var(--green);
+}
+
+footer p{
+    margin: auto;
+    max-width: 1280px;
+    text-align: center;
+    color: var(--green);
+}
+
+footer p a{
+    color: var(--green);
+}
+
+footer p a:hover{
+    color: var(--darkgreen);
+    transition: all 0.3s ease-in-out;
+}
