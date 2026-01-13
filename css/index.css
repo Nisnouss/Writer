@@ -88,11 +88,16 @@ header .formheader .btnheader #btnheader:hover{
     transition: all 0.3s ease-in-out;
 }
 
+#searchicon{
+    display: none;
+}
+
 /* Section 1 */
 
 main .section1{
     margin: auto;
     max-width: 1440px;
+    margin-top: 20px;
 }
 
 main .section1 .background{
@@ -275,5 +280,44 @@ footer p a:hover{
 
     footer div{
         padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    header div{
+        display: none;
+    }
+
+    header .formheader #searchicon{
+        display: block;
+    }
+
+    main .section1 .background article{
+        margin-bottom: 20px;
+    }
+
+    main .section2 .grandediv .petitediv1,
+    main .section2 .grandediv .petitediv2,
+    main .section2 .grandediv .petitediv3{
+        display: inline;
+    }
+
+    main .section2 .grandediv .petitediv1 img,
+    main .section2 .grandediv .petitediv2 img,
+    main .section2 .grandediv .petitediv3 img{
+        width: 250px;
+        margin-bottom: 10px;
+    }
+
+    main .section2 .grandediv .petitediv1 #btn,
+    main .section2 .grandediv .petitediv2 #btn,
+    main .section2 .grandediv .petitediv3 #btn{
+        margin-top: 20px;
+    }
+
+    main .section2 .grandediv .petitediv1 article,
+    main .section2 .grandediv .petitediv2 article,
+    main .section2 .grandediv .petitediv3 article{
+        width: fit-content;
     }
 }
