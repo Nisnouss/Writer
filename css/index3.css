@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+/* Général */
+
+*{
+    margin: 0;
+    font-family: var(--Newsreader);
+}
+
+img{
+    border-radius: 12px;
+}
+
+:root{
+    --Newsreader: "Newsreader", serif;
+    --green: #4F966E;
+    --grey: #E8F2ED;
+    --darkgreen: #0D1C12;
+    --lightgreen: #1AE570;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0D1C12;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    margin: auto;
+    max-width: 1280px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid var(--grey);
+}
+
+header a{
+    color: var(--darkgreen);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header .formheader{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+header .formheader .barsearch{
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: var(--grey);
+    color: var(--grey);
+}
+
+header .formheader .barsearch #loupe{
+    color: var(--green);
+}
+
+header .formheader .barsearch #search{
+    border: none;
+    background-color: (var(--grey));
+}
+
+header .formheader .btnheader #btnheader{
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    background-color: var(--grey);
+    padding: 8px 13px;
+    color: black;
+}
+
+header .formheader .btnheader #btnheader:hover{
+    background-color: var(--darkgreen);
+    color: var(--grey);
+    transition: all 0.3s ease-in-out;
+}
+
+#searchicon{
+    display: none;
+}
+
+/* Main */
+
+main #formulaire{
+    display: grid;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 1440px;
+    line-height: 45px;
+}
+
+main #formulaire .normal{
+    display: grid;
+}
+
+main #formulaire .normal label{
+    font-family: var(--Newsreader);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main #formulaire .normal input{
+    border: 1px solid var(--grey);
+    padding: 10px 15px;
+    background-color: var(--grey);
+    border-radius: 12px;
+    color: var(--green);
+    font-family: var(--Newsreader);
+    font-size: 16px;
+}
+
+main #formulaire .normal{
+    margin-bottom: 15px;
+}
+
+main #formulaire .gras label{
+    font-family: var(--Newsreader);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+main #formulaire .select input{
+    border: 1px solid var(--grey);
+    background-color: var(--grey);
+    border-radius: 16px;
+    font-style: var(--Newsreader);
+    color: var(--darkgreen);
+    padding: 10px 15px;
+}
+
+main #formulaire .select{
+    margin-bottom: 15px;
+}
+
+main #formulaire .save #img{
+    border: 1px solid var(--grey);
+    background-color: var(--grey);
+    border-radius: 16px;
+    font-style: var(--Newsreader);
+    color: var(--darkgreen);
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+main #formulaire .save #img:hover,
+main #formulaire .select input:hover{
+    background-color: #1AE570;
+    border: #1AE570;
+    transition: all 0.3s ease-in-out;
+}
+
+main #formulaire .save #btn{
+    border: 1px solid var(--lightgreen);
+    border-radius: 16px;
+    background-color: var(--lightgreen);
+    padding: 10px 15px;
+    color: var(--darkgreen);
+    font-weight: bold;
+}
+
+main #formulaire .save{
+    justify-self: end;
+    gap: 10px;
+}
+
+main #formulaire .save #btn:hover{
+    background-color: var(--grey);
+    border: var(--grey);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+
+footer div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: center;
+    margin: auto;
+    max-width: 1280px;
+    height: 152px;  
+}
+
+footer div a i{
+    color: var(--green);
+}
+
+footer p{
+    margin: auto;
+    max-width: 1280px;
+    text-align: center;
+    color: var(--green);
+}
+
+footer p a{
+    color: var(--green);
+}
+
+footer p a:hover{
+    color: var(--darkgreen);
+    transition: all 0.3s ease-in-out;
+}
