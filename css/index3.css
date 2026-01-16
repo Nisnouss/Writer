@@ -48,48 +48,52 @@ header a{
     margin-bottom: 15px;
 }
 
-header .formheader{
-    display: flex;
-    margin-top: 20px;
+header a img{
+    width: 40px;
+    border-radius: 20px;
+}
+
+header div{
+    display: flex; 
+    gap: 15px;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 20px;
 }
 
-header .formheader .barsearch{
-    border: 1px solid var(--grey);
-    border-radius: 20px;
-    padding: 10px 15px;
-    background-color: var(--grey);
-    color: var(--grey);
+header div nav ul li{
+    list-style: none;
 }
 
-header .formheader .barsearch #loupe{
-    color: var(--green);
+header div nav ul li a{
+    font-weight: 400;
 }
 
-header .formheader .barsearch #search{
-    border: none;
-    background-color: (var(--grey));
-}
-
-header .formheader .btnheader #btnheader{
-    border: 1px solid var(--grey);
-    border-radius: 20px;
-    background-color: var(--grey);
-    padding: 8px 13px;
-    color: black;
-}
-
-header .formheader .btnheader #btnheader:hover{
-    background-color: var(--darkgreen);
-    color: var(--grey);
+header div nav ul li a:hover{
+    color: var(--lightgreen);
     transition: all 0.3s ease-in-out;
 }
 
-#searchicon{
-    display: none;
+header div #click{
+    margin-top: 15px;
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    background-color: var(--grey);
+    padding: 10px 15px;
+}
+
+header div #click:hover{
+    border: var(--lightgreen);
+    background-color: var(--lightgreen);
+    transition: all 0.3s ease-in-out;
+}
+
+header div a img{
+    margin-top: 10px;
+}
+
+header div nav ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 /* Main */
