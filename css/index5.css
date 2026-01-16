@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+/* Général */
+
+*{
+    margin: 0;
+    font-family: var(--Newsreader);
+}
+
+img{
+    border-radius: 12px;
+}
+
+:root{
+    --Newsreader: "Newsreader", serif;
+    --green: #4F966E;
+    --grey: #E8F2ED;
+    --darkgreen: #0D1C12;
+    --lightgreen: #1AE570;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0D1C12;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    margin: auto;
+    max-width: 1280px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid var(--grey);
+}
+
+header a{
+    color: var(--darkgreen);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+header .Sign{
+    border: 1px solid var(--lightgreen);
+    background-color: var(--lightgreen);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: var(--darkgreen);
+}
+
+header .Sign:hover{
+    background-color: #0D1C12;
+    border: #0D1C12;
+    color: #1AE570;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Main */
+
+main #formulaire{
+    display: grid;
+    justify-content: center;
+    margin: 30px auto;
+    line-height: 40px;
+}
+
+#t0{
+    font-weight: bold;
+    font-size: 32px;
+    font-family: var(--Newsreader);
+    color: #0D1C12;
+}
+
+#t1,#t2{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--Newsreader);
+    color: #0D1C12;
+}
+
+#t3{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--Newsreader);
+    color: #0D1C12;
+}
+
+#t4{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--Newsreader);
+    color: #393939;
+}
+
+#green{
+    border: 1px solid var(--lightgreen);
+    padding: 10px 15px;
+    background-color: var(--lightgreen);
+    border-radius: 20px;
+    width: -webkit-fill-available;
+}
+
+#create{
+    border: 1px solid var(--grey);
+    padding: 10px 15px;
+    background-color: var(--grey);
+    border-radius: 20px;
+    width: -webkit-fill-available;
+}
+
+#password{
+    display: grid;
+}
+
+#pass,#mail{
+    border: 1px solid var(--grey);
+    padding: 10px 15px;
+    background-color: var(--grey);
+    border-radius: 20px;
+}
+
+/* Footer */
+
+footer div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-self: center;
+    margin: auto;
+    max-width: 1280px;
+    height: 50px; 
+}
+
+footer div a i{
+    color: var(--green);
+}
+
+footer p{
+    margin: auto;
+    max-width: 1280px;
+    text-align: center;
+    color: var(--green);
+}
+
+footer p a{
+    color: var(--green);
+}
+
+footer p a:hover{
+    color: var(--darkgreen);
+    transition: all 0.3s ease-in-out;
+}
+
+footer div a{
+    color: var(--green);
+}
