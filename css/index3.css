@@ -96,6 +96,10 @@ header div nav ul{
     gap: 15px;
 }
 
+header div #burger_menu{
+    display: none;
+}
+
 /* Main */
 
 main #formulaire{
@@ -216,4 +220,26 @@ footer p a{
 footer p a:hover{
     color: var(--darkgreen);
     transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px){
+    header{
+        padding: 0 15px;
+    }
+
+    header div nav ul{
+        display: none;
+    }
+
+    header div #burger_menu{
+        display: flex;
+    }
+
+    main{
+        padding: 0 15px;
+    }
+
+    footer div{
+        padding: 0 15px;
+    }
 }
