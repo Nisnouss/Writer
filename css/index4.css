@@ -96,6 +96,10 @@ header div nav ul{
     gap: 15px;
 }
 
+header div #burger_menu{
+    display: none;
+}
+
 /* Main */
 
 /* Tableaux */
@@ -204,3 +208,28 @@ footer p a:hover{
     transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 1024px){
+    header{
+        padding: 0 15px;
+    }
+
+    header div nav ul{
+        display: none;
+    }
+
+    header div #burger_menu{
+        display: flex;
+    }
+
+    main{
+        padding: 0 15px;
+    }
+
+    main #formulaire #selection{
+        display: inline-grid
+    }
+
+    footer div{
+        padding: 0 15px;
+    }
+}
